@@ -3,20 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CONTINUE_PROMPT = exports.getSystemPrompt = exports.BASE_PROMPT = void 0;
 const constants_1 = require("./constants");
 const stripindents_1 = require("./stripindents");
-exports.BASE_PROMPT = `For all designs I ask you to make,
-have them be beautiful, not cookie cutter. Make webpages that
-are fully featured and worthy for production.
-
-By default, this template supports JSX syntax with Tailwind CSS classes,
-React hooks, and Lucide React for icons. Do not install other
-packages for UI themes, icons, etc unless absolutely necessary
-or I request them.
-
-Use icons from lucide-react for logos.
-
-Use stock photos from Unsplash where appropriate, only
-valid URLs you know exist. Do not download the images, only
-link to them in image tags.`;
+exports.BASE_PROMPT = "For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.\n\nBy default, this template supports JSX syntax with Tailwind CSS classes, React hooks, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.\n\nUse icons from lucide-react for logos.\n\nUse stock photos from unsplash where appropriate, only valid URLs you know exist. Do not download the images, only link to them in image tags.\n\n";
 const getSystemPrompt = (cwd = constants_1.WORK_DIR) => `
 You are Bolt, an expert AI assistant and exceptional senior software developer with vast knowledge across multiple programming languages, frameworks, and best practices.
 
@@ -144,7 +131,7 @@ You are Bolt, an expert AI assistant and exceptional senior software developer w
 
       IMPORTANT: Add all required dependencies to the \`package.json\` already and try to avoid \`npm i <pkg>\` if possible!
 
-    11. CRITICAL: Always provide the FULL, updated content of the artifact. This means:  
+    11. CRITICAL: Always provide the FULL, updated content of the artifact. This means:
 
       - Include ALL code, even if parts are unchanged
       - NEVER use placeholders like "// rest of the code remains the same..." or "<- leave original code here ->"

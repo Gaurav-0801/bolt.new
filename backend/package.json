@@ -1,7 +1,6 @@
 {
-  "name": "backend",
+  "name": "be",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "tsc -b && node dist/index.js"
@@ -9,18 +8,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/dotenv": "^8.2.3",
-    "@types/express": "^5.0.3",
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "cors": "^2.8.5",
-    "dotenv": "^17.0.1",
-    "express": "^5.1.0",
-    "markdown": "^0.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
     "openai": "^5.8.2",
-    "typescript": "^5.8.3"
-  },
-  "devDependencies": {
-    "@types/node": "^24.0.10"
+    "typescript": "^5.7.2"
   }
 }
