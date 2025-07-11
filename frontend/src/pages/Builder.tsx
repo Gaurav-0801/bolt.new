@@ -212,7 +212,7 @@ export function Builder() {
                 <div className='flex'>
                   <br />
                   {(loading || !templateSet) && <Loader />}
-                  {!(loading || !templateSet) && <div className='flex w-full'>
+                  {!(loading || !templateSet) && <div className='flex'>
                     <textarea value={userPrompt} onChange={(e) => {
                     setPrompt(e.target.value)
                   }} className='p-2 w-full'></textarea>
@@ -263,6 +263,5 @@ export function Builder() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div> );
 }
